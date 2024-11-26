@@ -6,16 +6,17 @@ Esse desafio inclui a criação, inserção e manipulação de dados para constr
 Criação de Tabelas:
 Seller: Tabela para armazenar informações sobre os vendedores, como nome social, CPF, CNPJ, tipo de frete, endereço, e outros dados.
 Product: Tabela que armazena detalhes dos produtos, como nome, categoria, avaliação, preço, tamanho, peso e descrição.
-OrderDelivery: Tabela para informações sobre as entregas, incluindo o status da entrega, código de rastreamento, datas de envio, previsão de entrega, entre outros.
-ProductReviews: Tabela para armazenar as avaliações de produtos feitas pelos clientes, incluindo notas e comentários.
+Entregas: Tabela para informações sobre as entregas, incluindo o status da entrega, código de rastreamento, datas de envio, previsão de entrega, entre outros.
+Avaliações de produtos: Tabela para armazenar as avaliações de produtos feitas pelos clientes, incluindo notas e comentários.
 clients: Tabela para armazenar informações dos clientes, como nome, CPF, endereço, telefone e email.
+Pedidos: contém informações detalhadas sobre cada transação feita por um cliente
 
 Inserção de Dados:
 Dados de vendedores (Seller), como nome social, CPF, CNPJ, e outros atributos.
 Dados de produtos (Product), incluindo nomes, categorias, avaliações e preços.
 Dados de clientes (clients), como nome, CPF, endereço, etc.
-Dados de entregas (OrderDelivery), incluindo status, código de rastreamento, data de envio e previsão de entrega.
-Dados de avaliações de produtos (ProductReviews), com notas e comentários.
+Dados de entregas, incluindo status, código de rastreamento, data de envio e previsão de entrega.
+Dados de avaliações de produtos, com notas e comentários.
 
 Consultas SQL:
 Realizadas consultas para responder a perguntas como:
@@ -29,5 +30,5 @@ Relacionamentos entre as Tabelas:
 
 Estabelecidos relacionamentos entre tabelas como:
 Seller com Product (um vendedor pode ter muitos produtos).
-Product com ProductReviews (um produto pode ter muitas avaliações).
-OrderDelivery com Product e clients (uma entrega está associada a um produto e a um cliente).
+Product com Avaliações de produtos (um produto pode ter muitas avaliações).
+Entrega com Product e clients (uma entrega está associada a um produto e a um cliente).
